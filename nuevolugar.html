@@ -59,8 +59,15 @@
             <input type="text" id="fname" name="fname" value=""><br>
             <label for="lname">Description:</label><br>
             <input type="text" id="Description" name="Description" value=""><br>
-            <label for="lname">Municipio:</label><br>
-            <input type="text" id="Municipio" name="Municipio" value=""><br>
+            <form action="/action_page.php">
+                <label for="Municipio">Municipio:</label><br>
+                <select name="Municipio" id="Municipio">
+                  <option value=""></option>
+                  <option value="La playa">La playa</option>
+                  <option value="Las Canteras">Las Canteras</option>
+                  <option value="Mall">Mall</option>
+                  <option value="Maspalomas">Maspalomas</option>
+                </select><br>
             <label for="lname">Url:</label><br>
             <input type="text" id="Url" name="Url" value=""><br>
             <label for="lname">Url google maps:</label><br>
@@ -68,6 +75,6 @@
             <input type="file" id="myFile" name="filename">
             <input type="submit" value="Submit" class="noo">
           </form> </div>
-         
+
 </body>
 </html>
