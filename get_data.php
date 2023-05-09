@@ -14,7 +14,7 @@ if($_POST["fname"] == ""){
 }
 else{
     if((strlen($_POST["fname"])>20)){
-        echo "<br>ERROR: the lenght is too big";
+        echo "<br>ERROR: no!no! what?";
     }
     else{
     echo "<br>The name of the place is ".$_POST["fname"];
@@ -26,7 +26,7 @@ if($_POST["Description"] == ""){
 }
 else{
     if((strlen($_POST["Description"])>100)){
-        echo "<br>ERROR: the lenght is too big";
+        echo "<br>ERROR: dont write too much, i dont like to read";
     }
     else{
     echo "<br>The Description of the place is ".$_POST["Description"];
@@ -50,7 +50,7 @@ if($_POST["Url"] == ""){
 }
 else{
     if((strlen($_POST["Url"])>100)){
-        echo "<br>ERROR: the lenght is too big";
+        echo "<br>ERROR: are you sure?isnt ur mom adress?";
     }
     else{
     echo "<br>The official site of the place is ".$_POST["Url"];
@@ -63,7 +63,7 @@ if($_POST["maps"] == ""){
 }
 else{
     if((strlen($_POST["maps"])>100)){
-        echo "<br>ERROR: the lenght is too big";
+        echo "<br>ERROR: use short url, you lil monkey";
     }
     else{
     echo "<br>The location on google maps of the place is ".$_POST["maps"];
@@ -76,7 +76,7 @@ if($_POST["filename"] == ""){
 }
 else{
     if((strlen($_POST["filename"])>10)){
-        echo "<br>ERROR: the format isnt good";
+        echo "<br>ERROR: the format isnt good, what are you trying to send me??";
     }
     else{
     echo "<br>The file is: ".$_POST["filename"];
