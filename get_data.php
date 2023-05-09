@@ -13,7 +13,7 @@ if($_POST["fname"] == ""){
     echo "<br>ERROR: the field is empty";
 }
 else{
-    echo "<br>The name of the place is .$_POST["fname"]";
+    echo "<br>The name of the place is ".$_POST["fname"];
 }
 ?>
 
