@@ -91,7 +91,7 @@ else{
 
 ?>
 
-<a href="nuevolugar.html">Reincercare</a>
+<br><a href="nuevolugar.html">Reincercare</a>
 
 </body>    
 
