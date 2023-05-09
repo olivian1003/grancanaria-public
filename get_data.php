@@ -82,28 +82,11 @@ else{
     echo "<br>The file is: ".$_POST["filename"];
 }
 }
-
-
-
-
-
-
-
 ?>
 <footer>
-           
-
 <br><a href="nuevolugar.html">Reincercare</a>
-
-
 <p>&copy; 2023 Olivian</p>
 </footer>
 </body>    
-
-
-
-
-
-
 </html>
 
