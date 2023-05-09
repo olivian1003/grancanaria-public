@@ -49,7 +49,7 @@ if($_POST["Url"] == ""){
     echo "<br>ERROR: the field is empty";
 }
 else{
-    if((strlen($_POST["Url"])>10)){
+    if((strlen($_POST["Url"])>100)){
         echo "<br>ERROR: the lenght is too big";
     }
     else{
