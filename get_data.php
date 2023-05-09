@@ -95,6 +95,9 @@ else{
          
 
 <br><a href="nuevolugar.html">Reincercare</a>
+
+
+<p>&copy; 2023 Olivian</p>
 </footer>
 </body>    
 
