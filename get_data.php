@@ -53,7 +53,7 @@ else{
         echo "<br>ERROR: the lenght is too big";
     }
     else{
-    echo "<br>The Url of the place is ".$_POST["Url"];
+    echo "<br>The official site of the place is ".$_POST["Url"];
 }
 }
 
@@ -66,7 +66,7 @@ else{
         echo "<br>ERROR: the lenght is too big";
     }
     else{
-    echo "<br>The name of the place is ".$_POST["maps"];
+    echo "<br>The location on google maps of the place is ".$_POST["maps"];
 }
 }
 
