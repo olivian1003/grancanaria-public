@@ -15,6 +15,12 @@ if($_POST["fname"] == ""){
 else{
     echo "<br>The name of the place is ".$_POST["fname"];
 }
+if((strlen($_POST["fname"])>10)){
+    echo "<br>ERROR: the lenght is too big";
+}
+else{
+    echo "<br>The name of the place is ".$_POST["fname"];
+}
 ?>
 
 
