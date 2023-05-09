@@ -13,7 +13,7 @@ if($_POST["fname"] == ""){
     echo "<br>ERROR: the field is empty";
 }
 else{
-    if((strlen($_POST["fname"])>10)){
+    if((strlen($_POST["fname"])>20)){
         echo "<br>ERROR: the lenght is too big";
     }
     else{
@@ -37,7 +37,7 @@ if($_POST["Municipio"] == ""){
     echo "<br>ERROR: the field is empty";
 }
 else{
-    if((strlen($_POST["Municipio"])>100)){
+    if((strlen($_POST["Municipio"])>20)){
         echo "<br>ERROR: the lenght is too big";
     }
     else{
@@ -62,7 +62,7 @@ if($_POST["maps"] == ""){
     echo "<br>ERROR: the field is empty";
 }
 else{
-    if((strlen($_POST["maps"])>10)){
+    if((strlen($_POST["maps"])>100)){
         echo "<br>ERROR: the lenght is too big";
     }
     else{
