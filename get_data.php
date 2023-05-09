@@ -1,6 +1,6 @@
 <html>
 <body>
-<h1>data <form action=""></form></h1>
+<h1>data</h1>
 <?php
 echo "<br> The name of the place is ".$_POST["fname"];
 echo "<br> The description of the place is ".$_POST["Description"];
