@@ -45,6 +45,44 @@ else{
 }
 }
 
+if($_POST["Url"] == ""){
+    echo "<br>ERROR: the field is empty";
+}
+else{
+    if((strlen($_POST["Url"])>10)){
+        echo "<br>ERROR: the lenght is too big";
+    }
+    else{
+    echo "<br>The Url of the place is ".$_POST["Url"];
+}
+}
+
+
+if($_POST["maps"] == ""){
+    echo "<br>ERROR: the field is empty";
+}
+else{
+    if((strlen($_POST["maps"])>10)){
+        echo "<br>ERROR: the lenght is too big";
+    }
+    else{
+    echo "<br>The name of the place is ".$_POST["maps"];
+}
+}
+
+
+if($_POST["filename"] == ""){
+    echo "<br>ERROR: the field is empty";
+}
+else{
+    if((strlen($_POST["filename"])>10)){
+        echo "<br>ERROR: the format isnt good";
+    }
+    else{
+    echo "<br>The file is: ".$_POST["filename"];
+}
+}
+
 
 
 
