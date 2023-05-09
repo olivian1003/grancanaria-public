@@ -13,27 +13,12 @@ if($_POST["fname"] == ""){
     echo "<br>ERROR: the field is empty";
 }
 else{
-    echo "<br>The name of the place is ".$_POST["fname"];
-
-if((strlen($_POST["fname"])>10)){
-    echo "<br>ERROR: the lenght is too big";
-}
-else{
+    if((strlen($_POST["fname"])>10)){
+        echo "<br>ERROR: the lenght is too big";
+    }
+    else{
     echo "<br>The name of the place is ".$_POST["fname"];
 }
-}
-
-if($_POST["Description"] == ""){
-    echo "<br>ERROR: the field is empty";
-}
-else{
-    echo "<br>TThe description of the place is ".$_POST["Description"];
-}
-if((strlen($_POST["Description"])>100)){
-    echo "<br>ERROR: the lenght is too big";
-}
-else{
-    echo "<br>The description of the place is ".$_POST["Description"];
 }
 
 
