@@ -9,7 +9,7 @@ echo "<br> The official site of the place is ".$_POST["Url"];
 echo "<br> The location on google maps of the place is ".$_POST["maps"];
 echo "<br> Attached file: ".$_POST["filename"];
 
-if(.$_POST["fname"] == ""){
+if($_POST["fname"] == ""){
     echo "<br>ERROR: the field is empty";
 }
 else{
