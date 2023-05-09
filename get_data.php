@@ -90,9 +90,12 @@ else{
 
 
 ?>
+<footer>
+            <p>&copy; 2023 Olivian</p>
+         
 
 <br><a href="nuevolugar.html">Reincercare</a>
-
+</footer>
 </body>    
 
 
