@@ -71,7 +71,7 @@ else{
 }
 
 
-if($_POST["filename"] == ""){
+if($_POST["filename"] == null){
     echo "<br>ERROR: the field is empty";
 }
 else{
@@ -91,7 +91,7 @@ else{
 
 ?>
 
-
+<a href="nuevolugar.html">Reincercare</a>
 
 </body>    
 
