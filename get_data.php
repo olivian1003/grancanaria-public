@@ -20,6 +20,17 @@ else{
     echo "<br>The name of the place is ".$_POST["fname"];
 }
 }
+if($_POST["Description"] == ""){
+    echo "<br>ERROR: the field is empty";
+}
+else{
+    if((strlen($_POST["Description"])>10)){
+        echo "<br>ERROR: the lenght is too big";
+    }
+    else{
+    echo "<br>The Description of the place is ".$_POST["Description"];
+}
+}
 
 
 
