@@ -3,15 +3,23 @@
 <h1>data</h1>
 
 <?php
-              
-if(isset($_POST['nuevolugar.html']))
-{
-$data=$_POST['nuevolugar.html'];
-
-$fp = fopen('data.txt', 'a');
-fwrite($fp, $data);
-fclose($fp);
+$myfile = fopen("data.txt", "a") or die("Unable to open file!");
+$txt = "Donald Duck\n";
+fwrite($myfile, $txt);
+$txt = "Goofy Goof\n";
+fwrite($myfile, $txt);
+fwrite($myfile, $Name);
+fwrite($myfile, $Description);
+fwrite($myfile, $Municipio);
+fwrite($myfile, $Url);
+fwrite($myfile, $maps);
+fwrite($myfile, $filename);
+if(fwrite($fp, $myfile))  {
+    echo 'saved';
 }
+
+ fclose($myfile);
+
 
 //echo "<br> The name of the place is ".$_POST["fname"];
 //echo "<br> The description of the place is ".$_POST["Description"];
