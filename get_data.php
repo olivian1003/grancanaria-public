@@ -19,7 +19,7 @@ fwrite($myfile,"\r\n");
 fwrite($myfile, $_POST["maps"]);
 fwrite($myfile,"\r\n");
 fwrite($myfile, $_POST["filename"]);
-fwrite($myfile,"<br>");
+fwrite($myfile,"");
  fclose($myfile);
  
 
