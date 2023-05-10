@@ -9,17 +9,17 @@ fwrite($myfile, $txt);
 $txt = "";
 fwrite($myfile, $txt);
 fwrite($myfile, $_POST["fname"]);
-fwrite($myfile,"\r\n");
+fwrite($myfile,";");
 fwrite($myfile, $_POST["Description"]);
-fwrite($myfile,"\r\n");
+fwrite($myfile,";");
 fwrite($myfile, $_POST["Municipio"]);
-fwrite($myfile,"\r\n");
+fwrite($myfile,";");
 fwrite($myfile, $_POST["Url"]);
-fwrite($myfile,"\r\n");
+fwrite($myfile,";");
 fwrite($myfile, $_POST["maps"]);
-fwrite($myfile,"\r\n");
+fwrite($myfile,";");
 fwrite($myfile, $_POST["filename"]);
-fwrite($myfile,"\n\n");
+fwrite($myfile,";");
  fclose($myfile);
  
 
