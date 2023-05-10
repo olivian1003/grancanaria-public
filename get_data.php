@@ -20,14 +20,6 @@ fwrite($newtextfile, $maps);
 fwrite($newtextfile, $filename);
 fclose($fnewtextfile);
 }
-
-?>
-
-
-
-
-
-<?php
 //echo "<br> The name of the place is ".$_POST["fname"];
 //echo "<br> The description of the place is ".$_POST["Description"];
 //echo "<br> The Municipio is ".$_POST["Municipio"];
