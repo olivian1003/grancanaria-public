@@ -11,7 +11,7 @@ $Url = "Url:".$_POST["Url"]."";
 $maps = "maps:".$_POST["maps"]."";
 $filename = "filename:".$_POST["filename"]."";
 
-$newtextfile=fopen("newtextfile.txt", "a");
+$newtextfile=fopen("newtextfile.txt", "a+");
 fwrite($newtextfile, $Name);
 fwrite($newtextfile, $Description);
 fwrite($newtextfile, $Municipio);
@@ -19,6 +19,9 @@ fwrite($newtextfile, $Url);
 fwrite($newtextfile, $maps);
 fwrite($newtextfile, $filename);
 fclose($fnewtextfile);
+if(fwrite($fp, $text))  {
+    echo 'saved';
+}
 }
 //echo "<br> The name of the place is ".$_POST["fname"];
 //echo "<br> The description of the place is ".$_POST["Description"];
