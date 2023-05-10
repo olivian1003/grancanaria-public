@@ -20,6 +20,7 @@ fwrite($myfile, $_POST["maps"]);
 fwrite($myfile,"\r\n");
 fwrite($myfile, $_POST["filename"]);
  fclose($myfile);
+ fwrite($myfile,"\r\n");
 
 
 //echo "<br> The name of the place is ".$_POST["fname"];
