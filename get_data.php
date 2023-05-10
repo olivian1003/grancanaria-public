@@ -13,10 +13,13 @@ if($_POST["fname"] == ""){
     echo "<br>ERROR: the field is empty";
 }
 else{
-    if((strlen($_POST["fname"])>20)){
+
+    if((strlen($_POST["fname"])>20))
+    {
         echo "<br>ERROR: no!no! what?";
     }
-    else{
+    else
+    {
     echo "<br>The name of the place is ".$_POST["fname"];
 }
 }
@@ -50,7 +53,7 @@ if($_POST["Url"] == ""){
 }
 else{
     if((strlen($_POST["Url"])>100)){
-        echo "<br>ERROR: are you sure?isnt ur mom adress?";
+        echo "<br>ERROR: are you sure?isnt ur adress";
     }
     else{
     echo "<br>The official site of the place is ".$_POST["Url"];
