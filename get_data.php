@@ -3,6 +3,19 @@
 <h1>data</h1>
 
 <?php
+              
+if(isset($_POST['nuevolugar.html']))
+{
+$data=$_POST['nuevolugar.html'];
+
+$fp = fopen('data.txt', 'a');
+fwrite($fp, $data);
+fclose($fp);
+}
+
+
+
+
 if(isset($_POST['submit'])){
 $Name = "Nombre:".$_POST["fname"]."";
 $Description = "The description of the place is".$_POST["Description"]."";
