@@ -9,14 +9,19 @@
 //echo "<br> The official site of the place is ".$_POST["Url"];
 //echo "<br> The location on google maps of the place is ".$_POST["maps"];
 //echo "<br> Attached file: ".$_POST["filename"];
+
+$error = false;
+
 if($_POST["fname"] == ""){
     echo "<br>ERROR: the field is empty";
+    $error = true;
 }
 else{
 
     if((strlen($_POST["fname"])>20))
     {
         echo "<br>ERROR: no!no! what?";
+        $error = true;
     }
     
 
@@ -24,6 +29,7 @@ else{
 
 if($_POST["Description"] == ""){
     echo "<br>ERROR: the field is empty";
+    $error = true;
 }
 else{
     if((strlen($_POST["Description"])>100)){
@@ -73,24 +79,29 @@ else{
      
 }
 
-$myfile = fopen("file.csv", "a+") or die("Unable to open file!");
-$txt = "";
-fwrite($myfile, $txt);
-$txt = "";
-fwrite($myfile, $txt);
-fwrite($myfile, $_POST["fname"]);
-fwrite($myfile,";");
-fwrite($myfile, $_POST["Description"]);
-fwrite($myfile,";");
-fwrite($myfile, $_POST["Municipio"]);
-fwrite($myfile,";");
-fwrite($myfile, $_POST["Url"]);
-fwrite($myfile,";");
-fwrite($myfile, $_POST["maps"]);
-fwrite($myfile,";");
-fwrite($myfile, $_POST["filename"]);
-fwrite($myfile,"; \n");
- fclose($myfile);
+if ($error == false) {
+    echo "<br>The data is correct";
+    echo "<br>The name of the place is ".$_POST["fname"];
+
+    $myfile = fopen("file.csv", "a+") or die("Unable to open file!");
+    $txt = "";
+    fwrite($myfile, $txt);
+    $txt = "";
+    fwrite($myfile, $txt);
+    fwrite($myfile, $_POST["fname"]);
+    fwrite($myfile,";");
+    fwrite($myfile, $_POST["Description"]);
+    fwrite($myfile,";");
+    fwrite($myfile, $_POST["Municipio"]);
+    fwrite($myfile,";");
+    fwrite($myfile, $_POST["Url"]);
+    fwrite($myfile,";");
+    fwrite($myfile, $_POST["maps"]);
+    fwrite($myfile,";");
+    fwrite($myfile, $_POST["filename"]);
+    fwrite($myfile,"; \n");
+    fclose($myfile);
+}
 ?>
 
 
