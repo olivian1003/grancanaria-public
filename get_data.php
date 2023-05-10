@@ -91,14 +91,14 @@ $Url = "Url:".$_POST["Url"]."";
 $maps = "maps:".$_POST["maps"]."";
 $filename = "filename:".$_POST["filename"]."";
 
-$file=fopen("newtextfile.txt", "a");
-fwrite($file, $Name);
-fwrite($file, $Description);
-fwrite($file, $Municipio);
-fwrite($file, $Url);
-fwrite($file, $maps);
-fwrite($file, $filename);
-fclose($file);
+$newtextfile=fopen("newtextfile.txt", "a");
+fwrite($newtextfile, $Name);
+fwrite($newtextfile, $Description);
+fwrite($newtextfile, $Municipio);
+fwrite($newtextfile, $Url);
+fwrite($newtextfile, $maps);
+fwrite($newtextfile, $filename);
+fclose($fnewtextfile);
 }
 
 ?>
