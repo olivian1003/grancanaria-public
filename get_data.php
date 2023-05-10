@@ -3,27 +3,6 @@
 <h1>data</h1>
 
 <?php
-$myfile = fopen("data.txt", "a+") or die("Unable to open file!");
-$txt = "";
-fwrite($myfile, $txt);
-$txt = "";
-fwrite($myfile, $txt);
-fwrite($myfile, $_POST["fname"]);
-fwrite($myfile,";");
-fwrite($myfile, $_POST["Description"]);
-fwrite($myfile,";");
-fwrite($myfile, $_POST["Municipio"]);
-fwrite($myfile,";");
-fwrite($myfile, $_POST["Url"]);
-fwrite($myfile,";");
-fwrite($myfile, $_POST["maps"]);
-fwrite($myfile,";");
-fwrite($myfile, $_POST["filename"]);
-fwrite($myfile,"; \n\n");
- fclose($myfile);
- 
-
-
 //echo "<br> The name of the place is ".$_POST["fname"];
 //echo "<br> The description of the place is ".$_POST["Description"];
 //echo "<br> The Municipio is ".$_POST["Municipio"];
@@ -103,6 +82,25 @@ else{
     echo "<br>The file is: ".$_POST["filename"];
 }
 }
+
+$myfile = fopen("data.txt", "a+") or die("Unable to open file!");
+$txt = "";
+fwrite($myfile, $txt);
+$txt = "";
+fwrite($myfile, $txt);
+fwrite($myfile, $_POST["fname"]);
+fwrite($myfile,";");
+fwrite($myfile, $_POST["Description"]);
+fwrite($myfile,";");
+fwrite($myfile, $_POST["Municipio"]);
+fwrite($myfile,";");
+fwrite($myfile, $_POST["Url"]);
+fwrite($myfile,";");
+fwrite($myfile, $_POST["maps"]);
+fwrite($myfile,";");
+fwrite($myfile, $_POST["filename"]);
+fwrite($myfile,"; \n\n");
+ fclose($myfile);
 ?>
 
 <footer>
