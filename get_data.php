@@ -4,9 +4,9 @@
 
 <?php
 $myfile = fopen("data.txt", "a") or die("Unable to open file!");
-$txt = "Donald Duck\n";
+$txt = "";
 fwrite($myfile, $txt);
-$txt = "Goofy Goof\n";
+$txt = "";
 fwrite($myfile, $txt);
 fwrite($myfile, $Name);
 fwrite($myfile, $Description);
