@@ -82,6 +82,14 @@ else{
 }
 }
 ?>
+<?php
+$myfile = fopen("newtextfile.txt", "a") or die("Unable to open file!");
+$txt = "Donald Duck\n";
+fwrite($myfile, $txt);
+$txt = "Goofy Goof\n";
+fwrite($myfile, $txt);
+fclose($myfile);
+?>
 <footer>
 <br><a href="nuevolugar.html">Reincercare</a>
 <p>&copy; 2023 Olivian</p>
