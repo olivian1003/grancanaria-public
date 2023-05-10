@@ -8,11 +8,13 @@ $txt = "";
 fwrite($myfile, $txt);
 $txt = "";
 fwrite($myfile, $txt);
-fwrite($myfile, $_POST["fname"+"\r\n"]);
-fwrite($myfile, $_POST["Description"+"\r\n"]);
-fwrite($myfile, $_POST["Municipio"+"\r\n"]);
-fwrite($myfile, $_POST["Url"+"\r\n"]);
-fwrite($myfile, $_POST["maps"+"\r\n"]);
+fwrite($myfile, $_POST["fname"]);
+fwrite($myfile, "<br>"."\r\n");
+fwrite($myfile, $_POST["Description"]);
+fwrite($myfile, "<br>"."\r\n");
+fwrite($myfile, $_POST["Municipio"]);
+fwrite($myfile, $_POST["Url"]);
+fwrite($myfile, $_POST["maps"]);
 fwrite($myfile, $_POST["filename"]);
  fclose($myfile);
 
