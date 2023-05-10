@@ -83,15 +83,25 @@ else{
 }
 ?>
 <?php
-              
-              if(isset($_POST['newtextfile']))
-              {
-              $data=$_POST['newtextfile'];
-              $fp = fopen('newtextfile.txt', 'a');
-              fwrite($fp, $data);
-              fclose($fp);
-              }
-              ?>
+if(isset($_POST['submit'])){
+$Name = "Nombre:".$_POST["fname"]."";
+$Description = "The description of the place is".$_POST["Description"]."";
+$Municipio = "Municipio:".$_POST["Municipio"]."";
+$Url = "Url:".$_POST["Url"]."";
+$maps = "maps:".$_POST["maps"]."";
+$filename = "filename:".$_POST["filename"]."";
+
+$file=fopen("newtextfile.txt", "a");
+fwrite($file, $Name);
+fwrite($file, $Description);
+fwrite($file, $Municipio);
+fwrite($file, $Url);
+fwrite($file, $maps);
+fwrite($file, $filename);
+fclose($file);
+}
+
+?>
 <footer>
 <br><a href="nuevolugar.html">Reincercare</a>
 <p>&copy; 2023 Olivian</p>
