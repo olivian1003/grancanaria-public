@@ -3,7 +3,7 @@
 <h1>data</h1>
 
 <?php
-$myfile = fopen("data.txt", "w") or die("Unable to open file!");
+$myfile = fopen("data.txt", "a") or die("Unable to open file!");
 $txt = "";
 fwrite($myfile, $txt);
 $txt = "";
@@ -14,10 +14,6 @@ fwrite($myfile, $_POST["Municipio"]);
 fwrite($myfile, $_POST["Url"]);
 fwrite($myfile, $_POST["maps"]);
 fwrite($myfile, $_POST["filename"]);
-//if(fwrite($myfile, $myfile))  {
-//    echo 'saved';}
-
-
  fclose($myfile);
 
 
