@@ -14,7 +14,7 @@ fwrite($myfile, $_POST["Municipio"]);
 fwrite($myfile, $_POST["Url"]);
 fwrite($myfile, $_POST["maps"]);
 fwrite($myfile, $_POST["filename"]);
-if(fwrite($data, $myfile))  {
+if(fwrite($myfile))  {
     echo 'saved';
 }
 
