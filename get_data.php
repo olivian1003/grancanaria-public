@@ -9,11 +9,11 @@ fwrite($myfile, $txt);
 $txt = "";
 fwrite($myfile, $txt);
 fwrite($myfile, $_POST["fname"]);
-fwrite($myfile, $_POST["/nDescription"]);
-fwrite($myfile, $_POST["/nMunicipio"]);
-fwrite($myfile, $_POST["/nUrl"]);
-fwrite($myfile, $_POST["/nmaps"]);
-fwrite($myfile, $_POST["/nfilename"]);
+fwrite($myfile, $_POST["Description"]);<br>
+fwrite($myfile, $_POST["Municipio"]);<br>
+fwrite($myfile, $_POST["Url"]);<br>
+fwrite($myfile, $_POST["maps"]);<br>
+fwrite($myfile, $_POST["filename"]);<br>
 if(fwrite($fp, $myfile))  {
     echo 'saved';
 }
