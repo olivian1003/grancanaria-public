@@ -8,12 +8,12 @@ $txt = "";
 fwrite($myfile, $txt);
 $txt = "";
 fwrite($myfile, $txt);
-fwrite($myfile, $_POST["fname"]);
-fwrite($myfile, $_POST["Description"]);
-fwrite($myfile, $_POST["Municipio"]);
-fwrite($myfile, $_POST["Url"]);
-fwrite($myfile, $_POST["maps"]);
-fwrite($myfile, $_POST["filename"]);
+fwrite($myfile, $_POST["fname"]);"\n"
+fwrite($myfile, $_POST["Description"]);"\n"
+fwrite($myfile, $_POST["Municipio"]);"\n"
+fwrite($myfile, $_POST["Url"]);"\n"
+fwrite($myfile, $_POST["maps"]);"\n"
+fwrite($myfile, $_POST["filename"]);"\n"
  fclose($myfile);
 
 
