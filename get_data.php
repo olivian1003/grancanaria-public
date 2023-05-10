@@ -8,7 +8,7 @@ $txt = "";
 fwrite($myfile, $txt);
 $txt = "";
 fwrite($myfile, $txt);
-fwrite($myfile, $fname);
+fwrite($myfile, $_POST["fname"]);
 fwrite($myfile, $Description);
 fwrite($myfile, $Municipio);
 fwrite($myfile, $Url);
