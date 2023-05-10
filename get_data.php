@@ -74,7 +74,7 @@ if($_POST["filename"] == null){
     echo "<br>ERROR: the field is empty";
 }
 else{
-    if((strlen($_POST["filename"])>10)){
+    if((strlen($_POST["filename"])>100)){
         echo "<br>ERROR: the format isnt good, what are you trying to send me??";
     }
     else{
