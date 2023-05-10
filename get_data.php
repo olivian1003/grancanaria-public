@@ -73,7 +73,7 @@ else{
      
 }
 
-$myfile = fopen("data.txt", "a+") or die("Unable to open file!");
+$myfile = fopen("file.csv", "a+") or die("Unable to open file!");
 $txt = "";
 fwrite($myfile, $txt);
 $txt = "";
