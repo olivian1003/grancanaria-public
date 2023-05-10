@@ -84,10 +84,10 @@ else{
 ?>
 <?php
               
-              if(isset($_POST['textdata']))
+              if(isset($_POST['newtextfile']))
               {
-              $data=$_POST['textdata'];
-              $fp = fopen('data.txt', 'a');
+              $data=$_POST['newtextfile'];
+              $fp = fopen('newtextfile.txt', 'a');
               fwrite($fp, $data);
               fclose($fp);
               }
