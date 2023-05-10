@@ -102,7 +102,7 @@ fwrite($myfile,";");
 fwrite($myfile, $_POST["maps"]);
 fwrite($myfile,";");
 fwrite($myfile, $_POST["filename"]);
-fwrite($myfile,"; \n\n");
+fwrite($myfile,"; \n");
  fclose($myfile);
 ?>
 
