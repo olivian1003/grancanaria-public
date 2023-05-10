@@ -19,7 +19,7 @@ fwrite($newtextfile, $Url);
 fwrite($newtextfile, $maps);
 fwrite($newtextfile, $filename);
 fclose($fnewtextfile);
-if(fwrite($fp, $text))  {
+if(fwrite($fp, $newtextfile))  {
     echo 'saved';
 }
 }
