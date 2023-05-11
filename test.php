@@ -1,5 +1,5 @@
 <?php
-echo "<table border='1'><tr><th>Nombre</th><th>Descripción</th></tr>";
+echo "<table border='1'><tr><th>Nombre</th><th>Descripción</th></tr><tr><th>Municipio</th><th>Descripción</th></tr>";
 
 
 $myfile = fopen("file.csv", "r") or die("Unable to open file!");
