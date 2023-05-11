@@ -122,26 +122,7 @@
           </tr>
         </thead>
         <tbody>
-          <php>
-            $file = fopen("date.csv", "r");
-            while(!feof($file)) {
-              $line = fgets($file);
-              $fields = explode(";", $line);
-              if($fields[0] != "") {
-                echo "<tr>";
-                echo "<td>".$fields[0]."</td>";
-                echo "<td>".$fields[1]."</td>";
-                echo "<td>".$fields[2]."</td>";
-                echo "<td>".$fields[3]."</td>";
-                echo "<td>".$fields[4]."</td>";
-                echo "<td>".$fields[5]."</td>";
-                echo "<td>".$fields[6]."</td>";
-                echo "</tr>";
-              }
-            }
-            fclose($file);
-          </php>
-          <!--<tr>
+          <tr>
             <td><form action="/action_page.php">
             <input type="checkbox" id="Agaete" name="Agaete" value="Agaete"></form></td>
             <td>1</td>
@@ -181,7 +162,7 @@
             <td><a href="https://www.arucas.org/modules.php?mod=portal&file=index">Oficial Arucas Page</a></td>
             <td><a href="https://shorturl.at/qsDK9"><img src="./iconmap.png"></a></td>
             <td><img src="./arucas.jpg" alt="Arucas"></td>
-          </tr>-->
+          </tr>
          
           </tbody>
         </tbody>
