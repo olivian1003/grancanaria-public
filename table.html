@@ -99,6 +99,7 @@
 	   
 
 	</style>
+  
 </head>
 <body>
   
@@ -121,6 +122,25 @@
           </tr>
         </thead>
         <tbody>
+          <php>
+            $file = fopen("date.csv", "r");
+            while(!feof($file)) {
+              $line = fgets($file);
+              $fields = explode(";", $line);
+              if($fields[0] != "") {
+                echo "<tr>";
+                echo "<td>".$fields[0]."</td>";
+                echo "<td>".$fields[1]."</td>";
+                echo "<td>".$fields[2]."</td>";
+                echo "<td>".$fields[3]."</td>";
+                echo "<td>".$fields[4]."</td>";
+                echo "<td>".$fields[5]."</td>";
+                echo "<td>".$fields[6]."</td>";
+                echo "</tr>";
+              }
+            }
+            fclose($file);
+          </php>
           <!--<tr>
             <td><form action="/action_page.php">
             <input type="checkbox" id="Agaete" name="Agaete" value="Agaete"></form></td>
