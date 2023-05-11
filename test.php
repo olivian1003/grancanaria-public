@@ -9,10 +9,6 @@ while(!feof($myfile)) {
     echo "<tr><td>".$array_line[0]."</td><td>".$array_line[1]."</td></tr>";
 }
 fclose($myfile);
-
-echo "</table>";
-
-fclose($myfile);
 echo "</table>"
 
 
