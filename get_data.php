@@ -108,22 +108,18 @@ if ($error == false) {
     fclose($myfile);
 }
 
-$myfile = fopen("file.csv", "r") or die("Unable to open file!");
-// Output one line until end-of-file
-while(!feof($myfile)) {
-  echo fgets($myfile) . "<br>";
+
+echo "<html><body><table>\n\n";
+$f = fopen("file.csv", "r");
+while (($line = fgetcsv($f)) !== false) {
+        echo "<tr>";
+        foreach ($line as $cell) {
+                echo "<td>" . htmlspecialchars($cell) . "</td>";
+        }
+        echo "</tr>\n";
 }
-fclose($myfile);
-
-
-
-
-
-
-
-
-
-
+fclose($f);
+echo "\n</table></body></html>";
 ?>
 
 
