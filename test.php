@@ -105,9 +105,6 @@ while(!feof($file)) {
            text-align: center;
            color:black;
         }
-      
-	   
-
 	</style>
   
 </head>
@@ -116,7 +113,7 @@ while(!feof($file)) {
   <a href="index.html"><h1>Descubriendo Gran Canaria</h1></a>
 	<div style="display: flex; justify-content: center;">
 		<a class="das" href="./nuevolugar.html">Nuevo Lugar que visitar</a>
-		<a class="das" href="#table.html">Lugares que no me puedo perder</a>
+		<a class="das" href="#test.php">Lugares que no me puedo perder</a>
 	</div>
   <form class="nu" action="images/maps.png">
     <table border="1">
