@@ -88,9 +88,6 @@ if ($error == false) {
     echo "<br>The location on google maps of the place is ".$_POST["maps"];
     echo "<br>Attached file: ".$_POST["filename"];
    
-    $fileUploadDir = "./upload";
-    if (!(move_uploaded_file($_FILES["filename"]["tmp_name"], $fileUploadDir."/".$_FILES["filename"]["name"])))
-        echo "<br>Error al subir el fichero";
         
     $myfile = fopen("file.csv", "a") or die("Unable to open file!");
     $txt = "";
