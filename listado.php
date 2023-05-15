@@ -4,6 +4,9 @@ $places = array();
 while(!feof($file)){
     $places[] = explode(";",fgets($file));
 }
+echo "<pre>";
+print_r($places);
+echo "</pre>";
 
 
 ?>
