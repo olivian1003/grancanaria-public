@@ -110,7 +110,7 @@ if ($error == false) {
     fwrite($myfile, $_POST["maps"]);
     fwrite($myfile,";");
     fwrite($myfile, $_FILES["filename"]["name"]);
-    fwrite($myfile);
+    fwrite($myfile,"/n");
     fclose($myfile);
 }
 ?>
