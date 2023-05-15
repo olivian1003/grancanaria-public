@@ -87,8 +87,12 @@ if ($error == false) {
     echo "<br>The official site of the place is ".$_POST["Url"];
     echo "<br>The location on google maps of the place is ".$_POST["maps"];
     echo "<br>Attached file: ".$_POST["filename"];
+    $fileUploadDir = "./upload";
 
-    $myfile = fopen("file.csv", "a+") or die("Unable to open file!");
+    if (!(move_uploaded_file($_FILES["imagen"]["tmp_name"], $fileUploadDir."/".$_FILES["imagen"]["name"])))
+        echo "<br>Error al subir el fichero";
+        
+    $myfile = fopen("file.csv", "a") or die("Unable to open file!");
     $txt = "";
     fwrite($myfile, $txt);
     $txt = "";
@@ -113,7 +117,7 @@ if ($error == false) {
 
 
 <footer>
-<br><a href="nuevolugar.html">Reincercare</a>
+<br><a href="nuevolugar.html">try again</a>
 <p>&copy; 2023 Olivian</p>
 </footer>
 </body>    
