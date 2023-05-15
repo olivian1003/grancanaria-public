@@ -89,7 +89,7 @@ if ($error == false) {
     echo "<br>Attached file: ".$_POST["filename"];
     $fileUploadDir = "./upload";
 
-    if (!(move_uploaded_file($_FILES["imagen"]["tmp_name"], $fileUploadDir."/".$_FILES["imagen"]["name"])))
+    if (!(move_uploaded_file($_FILES["filename"]["filename"], $fileUploadDir."/".$_FILES["filename"]["filename"])))
         echo "<br>Error al subir el fichero";
         
     $myfile = fopen("file.csv", "a") or die("Unable to open file!");
