@@ -116,7 +116,7 @@ while(!feof($file)) {
 		<a class="das" href="#test.php">Lugares que no me puedo perder</a>
 	</div>
   <form class="nu" action="images/maps.png">
-    <table border="1">
+    <table border ="1">
       <thead>
           <tr>
               <th>Visitado</th>
