@@ -9,6 +9,8 @@
 //echo "<br> The official site of the place is ".$_POST["Url"];
 //echo "<br> The location on google maps of the place is ".$_POST["maps"];
 //echo "<br> Attached file: ".$_POST["filename"];
+print_r($_POST);
+print_r($_FILES);
 
 $error = false;
 
@@ -69,11 +71,11 @@ else{
 }
 
 
-if($_POST["filename"] == null){
+if($_FILES["filename"]["name"] == null){
     echo "<br>ERROR: the field is empty";
 }
 else{
-    if((strlen($_POST["filename"])>100)){
+    if((strlen($_FILES["filename"]["name"])>100)){
         echo "<br>ERROR: the format isnt good, what are you trying to send me??";
     }
      
@@ -86,7 +88,7 @@ if ($error == false) {
     echo "<br>The municipio is ".$_POST["Municipio"];
     echo "<br>The official site of the place is ".$_POST["Url"];
     echo "<br>The location on google maps of the place is ".$_POST["maps"];
-    echo "<br>Attached file: ".$_POST["filename"];
+    echo "<br>Attached file: ".$_FILES["filename"]["name"];
     $fileUploadDir = "./upload";
 
     if (!(move_uploaded_file($_FILES["filename"]["tmp_name"], $fileUploadDir."/".$_FILES["filename"]["name"])))
@@ -107,7 +109,7 @@ if ($error == false) {
     fwrite($myfile,";");
     fwrite($myfile, $_POST["maps"]);
     fwrite($myfile,";");
-    fwrite($myfile, $_POST["filename"]);
+    fwrite($myfile, $_FILES["filename"]["name"]);
     fwrite($myfile);
     fclose($myfile);
 }
