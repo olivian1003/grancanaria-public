@@ -21,8 +21,8 @@ while(!feof($file)) {
 	</header>
 	<nav>
 		<ul>
-			<li><a href="nuevo.html">Nuevo lugar que visitar</a></li>
-			<li><a href="listado.php">Lugares que no me puedo perder</a></li>
+			<li><a href="nuevolugar.html">Nuevo lugar que visitar</a></li>
+			<li><a href="test.php">Lugares que no me puedo perder</a></li>
 		</ul>
 	</nav>
     <br>

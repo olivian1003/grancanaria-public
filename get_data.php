@@ -9,8 +9,7 @@
 //echo "<br> The official site of the place is ".$_POST["Url"];
 //echo "<br> The location on google maps of the place is ".$_POST["maps"];
 //echo "<br> Attached file: ".$_POST["filename"];
-print_r($_POST);
-print_r($_FILES);
+
 
 $error = false;
 
