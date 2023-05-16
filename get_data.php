@@ -35,7 +35,7 @@ if($_POST["Municipio"] == ""){
     echo "<br>ERROR: the field is empty";
 }
 else{
-    if((strlen($_POST["Municipio"])>20)){
+    if((strlen($_POST["Municipio"])>40)){
         echo "<br>ERROR: the lenght is too big";
     }
    
