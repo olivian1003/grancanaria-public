@@ -1,9 +1,14 @@
 <?php
 $file = fopen("file.csv", "r"); 
 $places = array();
+
 while(!feof($file)) {
-    $places[] = explode(";",fgets($file));
+   $content = fgets($file);
+   if (($content != "\n") && ($content != ""))
+      $places[] = explode(";",$content);
 }
+
+//print_r($places);
 
 
 
@@ -131,6 +136,9 @@ while(!feof($file)) {
       <tbody>
 
           <?php
+
+          //echo "<br>The size of the array is...".sizeof($places);
+
 
              foreach ($places as $place) {
                   

@@ -88,10 +88,7 @@ if ($error == false) {
         
     $myfile = fopen("file.csv", "a") or die("Unable to open file!");
     $txt = "";
-    fwrite($myfile, $txt);
-    $txt = "";
-    fwrite($myfile, $txt);
-    fwrite($myfile, $_POST["fname"]);
+    fwrite($myfile, "\n".$_POST["fname"]);
     fwrite($myfile,";");
     fwrite($myfile, $_POST["Description"]);
     fwrite($myfile,";");
@@ -105,10 +102,6 @@ if ($error == false) {
     fclose($myfile);
 }
 ?>
-
-
-
-
 <footer>
 <br><a href="nuevolugar.html">try again</a>
 <p>&copy; 2023 Olivian</p>
