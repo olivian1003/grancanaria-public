@@ -100,9 +100,6 @@ if ($error == false) {
     fwrite($myfile,";");
     fwrite($myfile, $_FILES["filename"]["name"]);
     fclose($myfile);
-
-
-    //if (($_FILES["filename"]["name"]) == "")
 }
 ?>
 <footer>
