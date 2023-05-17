@@ -124,7 +124,6 @@ while(!feof($file)) {
     <table border ="1">
       <thead>
           <tr>
-              <th>Visitado</th>
               <th>Nombre del lugar</th>
               <th>Descripción</th>
               <th>Municipio</th>
@@ -136,25 +135,21 @@ while(!feof($file)) {
       <tbody>
 
           <?php
-
-          //echo "<br>The size of the array is...".sizeof($places);
-
-
-             foreach ($places as $place) {
+                    
+            foreach ($places as $place) {
                   
                   echo "<tr>";
-                  echo "<td><input type='checkbox' checked='checked'></td>";
                   echo "<td>$place[0]</td>";
                   echo "<td>$place[1]</td>";
                   echo "<td>$place[2]</td>";
                   echo "<td><a href='$place[3]'>$place[3]</a></td>";
                   echo "<td><a href='$place[4]'>$place[4]</a></td>";
-                  echo "<td><img src='upload/".$place[5]."' width='200px'></td>";
+                  echo "<td><a href='upload/".$place[5]."'target='_blank'><img src='upload/".$place[5]."' width='200px'></a></td>";
                   echo "</tr>";
 
               }
 
-          ?>
+          ?> 
       
       </tbody>
   </table>
